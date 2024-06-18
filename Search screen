@@ -1,2 +1,43 @@
 
 
+// SettingsStack.js
+
+import React from 'react';
+import { createStackNavigator } from '@react-navigation/stack';
+
+import Home from './Home';
+import Search from './Search';
+import Dish1 from './Dish1';
+import Dish2 from './Dish2';
+import Dish3 from './Dish3';
+import Dish4 from './Dish4';
+import Dish5 from './Dish5';
+import Dish6 from './Dish6';
+import Dish7 from './Dish7';
+import Dish8 from './Dish8';
+import Dish9 from './Dish9';
+import Dish10 from './Dish10';
+
+
+
+const Stack = createStackNavigator();
+
+const SearchStack = () => {
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="Search" component={Search} />
+      <Stack.Screen name='Dish1' component={Dish1} />
+      <Stack.Screen name='Dish2' component={Dish2} />
+      <Stack.Screen name='Dish3' component={Dish3} />
+      <Stack.Screen name='Dish4' component={Dish4} />
+      <Stack.Screen name='Dish5' component={Dish5} />
+      <Stack.Screen name='Dish6' component={Dish6} />
+      <Stack.Screen name='Dish7' component={Dish7} />
+      <Stack.Screen name='Dish8' component={Dish8} />
+      <Stack.Screen name='Dish9' component={Dish9} />
+      <Stack.Screen name='Dish10' component={Dish10} />
+    </Stack.Navigator>
+  );
+};
+
+export default SearchStack;
