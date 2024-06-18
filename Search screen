@@ -1,11 +1,2 @@
-This component provides an interactive search experience in a React Native application, incorporating API calls to fetch search results and manage recent searches. 
-It uses Axios for handling API requests, AsyncStorage for data storage, and React Navigation for navigating between different screens based on user interactions. 
-The component efficiently manages state and renders search results dynamically based on user input.
-
-👉 Overall Functionality  
-When the component mounts, it fetches recent searches from the server.
-As the user types in the search bar, search results are fetched and displayed.
-Clicking on a search result saves it to the server, updates the recent searches, and navigates to various detail screens based on the clicked item.
-The search bar includes clear and search functionalities, and the UI updates dynamically based on user interactions.
 
 
